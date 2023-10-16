@@ -2,7 +2,6 @@ import { useAutoAnimate } from "@formkit/auto-animate/react";
 import { useGetContacts } from "../../../Hooks/ContactHook";
 import { useState } from "react";
 import { BiSearch } from "react-icons/bi";
-import { BiTask } from "react-icons/bi";
 import Task from "../../Static/Task";
 
 const ViewAllContacts = () => {
@@ -25,7 +24,7 @@ const ViewAllContacts = () => {
       className="w-[calc(100vw-240px)] h-[calc(100vh-80px)]  secondPoint:w-[100vw] p-2"
     >
       <div
-        className="w-[650px] secondPoint:w-[400px] fifthPoint:w-[300px] thirdPoint:w-[150px] fourthPoint:w-[300px] fifthPoint:fixed thirdPoint:h-[40px] items-center shadow-md flex rounded-md h-[70px] px-2 fixed bg-white"
+        className="w-[650px]  fifthPoint:w-[330px]  fourthPoint:w-[95%] bg-white fifthPoint:fixed thirdPoint:h-[40px] items-center shadow-md flex rounded-md h-[70px] px-2 fixed "
         style={{}}
       >
         <input

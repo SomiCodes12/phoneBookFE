@@ -1,22 +1,15 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import pix from "../../assets/react.svg";
-import { BiSearch } from "react-icons/bi";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { useGetContacts } from "../../Hooks/ContactHook";
+
 
 const Header = () => {
-  const [toggle, setToggle] = useState<boolean>(false);
+  const [toggle] = useState<boolean>(false);
 
 
  
 
-  const onToggle = () => {
-
-  
-
-    setToggle(!toggle);
-  };
 
   console.log(toggle);
 

@@ -35,7 +35,7 @@ const CreateContact = () => {
   });
 
   return (
-    <div className="w-[calc(100vw-240px)] h-[calc(100vh-80px)] border    thirdPoint:w-[100vw] flex justify-center items-center">
+    <div className="w-[calc(100vw-240px)] h-[calc(100vh-80px)] thirdPoint:w-[100vw] flex justify-center items-center">
       <form
         className="w-[450px] h-[25s0px] border p-4"
         onSubmit={onHandleSubmit}
