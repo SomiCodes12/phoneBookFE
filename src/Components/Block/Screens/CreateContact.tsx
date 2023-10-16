@@ -3,8 +3,10 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import { createContactAPI } from "../../../APIs/ContactAPI";
 import Swal from "sweetalert2"
+import { useNavigate } from "react-router-dom";
 
 const CreateContact = () => {
+  const navigate = useNavigate()
   const schema = yup.object({
     name: yup.string().required(),
     number: yup.string().required(),
@@ -25,6 +27,8 @@ const CreateContact = () => {
           title: "Created Contact Successfully",
           showConfirmButton: false,
           timer: 2000,
+        }).then(() => {
+          navigate("/")
         })
       })
     reset()
