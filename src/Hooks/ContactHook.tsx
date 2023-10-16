@@ -2,13 +2,13 @@ import { useQuery } from "@tanstack/react-query"
 import { view, viewContactCategoryAPI } from "../APIs/ContactAPI"
 
 export const useGetContacts = () => {
-    const { data : allContacts , isLoading}   = useQuery({
+    const { data : contacts , isLoading} = useQuery({
         queryKey : ["allContacts"],
         queryFn : view
     });
-    console.log(allContacts);
+    console.log("viewwwww",typeof contacts);
     
-    return { allContacts , isLoading}
+    return { contacts , isLoading}
 }
 
 export const useGetContactCategory = () => {

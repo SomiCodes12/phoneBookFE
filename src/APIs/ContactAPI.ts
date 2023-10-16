@@ -6,6 +6,8 @@ const url : string = "http://localhost:4455"
 export const createContactAPI = async(data : any) => {
     try {
         return await axios.post(`${url}/api/v1/create-contact` , data).then((res : any) => {
+            console.log("api res", typeof res.data.data);
+            
             return res.data.data
         })
     } catch (error)     {
@@ -27,7 +29,7 @@ export const viewContactCategoryAPI = async() => {
 export const view = async() => {
     try {
        return await axios.get(`${url}/api/v1/view-contacts`).then((res:any)=>{
-        console.log("res",res);
+        // console.log("resss view",typeof res.data.data)
         
         return res.data.data
        })

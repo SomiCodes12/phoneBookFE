@@ -5,6 +5,7 @@ import ViewAllContacts from "../Components/Block/Screens/ViewAllContacts";
 import Family from "../Components/Block/Screens/Family";
 import Business from "../Components/Block/Screens/Business";
 import Friends from "../Components/Block/Screens/Friends";
+import Profile from "../Components/Block/Screens/Profile";
 
 export const MainRoute = createBrowserRouter([
   {
@@ -30,8 +31,12 @@ export const MainRoute = createBrowserRouter([
       {
         path : "/friends",
         element: <Friends/>,
-      },
-     
+      }, 
     ],
+    
+  },
+  {
+    path : "/profile",
+    element: <Profile/>,
   },
 ]);

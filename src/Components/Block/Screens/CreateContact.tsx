@@ -17,14 +17,14 @@ const CreateContact = () => {
 
   const onHandleSubmit = handleSubmit((res: any) => {
       createContactAPI(res).then(() => {
-        console.log(res);
+        console.log("create page res",res);
         
         Swal.fire({
           position: "center",
           icon: "success",
           title: "Created Contact Successfully",
           showConfirmButton: false,
-          timer: 1500,
+          timer: 2000,
         })
       })
     reset()
